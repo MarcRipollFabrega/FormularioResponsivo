@@ -10,31 +10,30 @@
     <title>Tabla interactiva</title>
 </head>
 <body>
+    <header>
+        <h1>RESUMEN HTML5</h1>
+    </header>
+    <main>
     <input type="text" id="buscador" placeholder="Buscar...">
     <div class="contenedor-tabla">
         <table id="miTabla">
             <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Ciudad</th>
-                </tr>
+                <tr><th>Etiqueta</th><th>Descripción</th></tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Juan Pérez</td>
-                    <td>30</td>
-                    <td>Madrid</td>
-                </tr>
-                <tr>
-                    <td>María García</td>
-                    <td>25</td>
-                    <td>Barcelona</td>
-                </tr>
+                <tr><td>Doctype</td><td>Declara el tipo de documento como HTML5</td></tr>
+                <tr><td>HTML</td><td> Elemento raíz del documento HTML</td></tr>
+                <tr><td>Head</td><td>Contiene los metadatos del documento</td></tr>
+                <tr><td>meta</td><td> Define los metadatos del documento</td></tr>
+                <tr><td>title</td><td>Define el título del documento que se muestra en la pestaña del navegador.</td></tr>
+                <tr><td>body</td><td> Contiene el contenido visible del documento.</td></tr>
+                <tr><td>h1-h6</td><td>Encabezados de diferentes niveles.</td></tr>
+                <tr><td>p</td><td>Párrafo de texto</td></tr>
                 </tbody>
         </table>
         <div id="vistaPrevia"></div>
     </div>
+</main>
     <script src="script.js"></script>
 </body>
 </html>

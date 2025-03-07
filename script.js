@@ -21,11 +21,14 @@ buscador.addEventListener('keyup', function() {
 for (let i = 1; i < filas.length; i++) {
     filas[i].addEventListener('mouseover', function() {
         const celdas = this.getElementsByTagName('td');
+        const nombre = celdas[0].textContent.replace(/\s+/g, ''); // Elimina espacios en blanco para el nombre del archivo
+        const rutaImagen = `img/${nombre}.jpg`; // Ajusta la extensión según el tipo de imagen
         vistaPrevia.innerHTML = `
             <h3>Vista Previa</h3>
+            <img src="${rutaImagen}" alt="${nombre}" style="max-width: 500px;">
             <p>Nombre: ${celdas[0].textContent}</p>
             <p>Edad: ${celdas[1].textContent}</p>
-            <p>Ciudad: ${celdas[2].textContent}</p>
+    
         `;
     });
 }
